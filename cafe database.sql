@@ -2,7 +2,6 @@ CREATE DATABASE IF NOT EXISTS cafe;
 
 USE cafe;
 
-
 DROP TABLE if exists Cafes;
 DROP TABLE if exists Discribtion;
 DROP TABLE if exists Users;
@@ -50,7 +49,6 @@ CREATE TABLE Favorites (
 CREATE TABLE Product (    
     Product_id INTEGER,
     Product_name VARCHAR(100),
-    Price INTEGER,
     User_id INTEGER,
     PRIMARY KEY (Product_id),
     FOREIGN KEY (User_id) REFERENCES Users(User_id)
@@ -99,12 +97,12 @@ insert into Favorites (Fav_id, Cafe_id, User_id) values (2, 12,2);
 insert into Favorites (Fav_id, Cafe_id, User_id) values (3, 11,3);
 insert into Favorites (Fav_id, Cafe_id, User_id) values (4, 9,4);
 
-Insert into Product (Product_id,Product_name) values (1,'Cafe latte');
-Insert into Product (Product_id,Product_name) values (2,'Capuchino');
-Insert into Product (Product_id,Product_name) values (3,'Hot chocolate');
-Insert into Product (Product_id,Product_name) values (4,'Toast');
-Insert into Product (Product_id,Product_name) values (5,'Blueberry Muffin');
-Insert into Product (Product_id,Product_name) values (6,'Apple pie');
+Insert into Product (Product_id,Product_name, User_id) values (1,'Cafe latte',1);
+Insert into Product (Product_id,Product_name, User_id) values (2,'Capuchino', 2);
+Insert into Product (Product_id,Product_name, User_id) values (3,'Hot chocolate', 3);
+Insert into Product (Product_id,Product_name, User_id) values (4,'Toast', 4);
+Insert into Product (Product_id,Product_name, User_id) values (5,'Blueberry Muffin', 1);
+Insert into Product (Product_id,Product_name, User_id) values (6,'Apple pie', 3);
 
 Insert into cafe_product (Product_id,cafe_id) values (1,1);
 Insert into cafe_product (Product_id,cafe_id) values (2,2);
