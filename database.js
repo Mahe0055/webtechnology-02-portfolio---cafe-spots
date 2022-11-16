@@ -1,5 +1,5 @@
 const mysql = require("mysql2");
-// Read the environment variables
+
 require('dotenv').config();
 console.log(process.env.HOST);
 console.log(process.env.PORT);

@@ -1,6 +1,16 @@
 {
+  "name": "rest-user-crud-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "mysql2": "^2.3.3"
-  }
+    "express": "~4.16.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19"
+  },
+  "packageManager": "yarn@3.2.3"
 }

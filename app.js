@@ -5,9 +5,6 @@ require('dotenv');
 const mysqlConnection = require("./database");
 const port = 3000;
 
-//Reference til cafe.js
-//const cafes = require("./cafe");
-
 const URL_FOR_FRONTEND = "YOUR_GITHUB_PAGE_ORIGIN_HERE";
 
 app.use(express.json()); //Used to parse JSON bodies
@@ -20,7 +17,7 @@ app.use(
     })
 );
 
-//Endpoint til users
+//Endpoint til cafes
 app.get('/cafes', (req, res) => {
     mysqlConnection.query(
         "SELECT * FROM cafes;",
@@ -33,73 +30,6 @@ app.get('/cafes', (req, res) => {
         }
     );
 })
-
-app.get('/Favorites', (req, res) => {
-    mysqlConnection.query(
-        "SELECT * FROM Favorites;",
-        (err, results, fields) => {
-            if (!err) {
-                res.json(results);
-            } else {
-                console.log(err);
-            }
-        }
-    );
-})
-
-app.get('/users', (req, res) => {
-    mysqlConnection.query(
-        "SELECT * FROM users;",
-        (err, results, fields) => {
-            if (!err) {
-                res.json(results);
-            } else {
-                console.log(err);
-            }
-        }
-    );
-})
-
-app.get('/product', (req, res) => {
-    mysqlConnection.query(
-        "SELECT * FROM product;",
-        (err, results, fields) => {
-            if (!err) {
-                res.json(results);
-            } else {
-                console.log(err);
-            }
-        }
-    );
-})
-
-app.get('/Cafe_product', (req, res) => {
-    mysqlConnection.query(
-        "SELECT * FROM Cafe_product;",
-        (err, results, fields) => {
-            if (!err) {
-                res.json(results);
-            } else {
-                console.log(err);
-            }
-        }
-    );
-})
-
-app.get('/Discribtion', (req, res) => {
-    mysqlConnection.query(
-        "SELECT * FROM Discribtion;",
-        (err, results, fields) => {
-            if (!err) {
-                res.json(results);
-            } else {
-                console.log(err);
-            }
-        }
-    );
-})
-
-
 
 app.listen(port, () => { //Udskriver http://localhost:3000
     console.log(`Node.js REST API listening at http://localhost:${port}`);
