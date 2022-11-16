@@ -7,11 +7,10 @@ console.log(process.env.USER);
 console.log(process.env.DATABASE);
 console.log(process.env.PASSWORD);
 
-
 const mysqlConnection = mysql.createConnection({
     host: process.env.HOST,
     port: process.env.PORT,
-    user: process.env.MYSQL_USER,
+    user: process.env.USER,
     database: process.env.DATABASE,
     password: process.env.PASSWORD,
     multipleStatements: true,
