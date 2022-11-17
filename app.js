@@ -54,7 +54,7 @@ app.get('/Favorites', (req, res) => {
     );
 })
 
-//Get users by favorites
+//Get users by id
 app.get('/favorites/:id', (req, res) => {
     const favoritesParameter = req.params.id;
     const sql = 'SELECT * FROM `favorites` WHERE `fav_id` = ?';
@@ -123,10 +123,10 @@ app.get('/Cafe_product', (req, res) => {
     );
 })
 
-//vi mangler
-app.get('/Cafe_product/:id', (req, res) => {
+//Get Cafe_product by id
+app.get('/Cafe_product/:id/:id', (req, res) => {
     const Cafe_productParameter = req.params.id;
-    const sql = 'SELECT * FROM `Cafe_product` WHERE `user_id, cafe_id` = ?';
+    const sql = 'SELECT * FROM `Cafe_product` WHERE `product_id` and `cafe_id` = ?';
     mysqlConnection.execute(sql,[Cafe_productParameter], (err, results) => {
         res.send(results);
     })
