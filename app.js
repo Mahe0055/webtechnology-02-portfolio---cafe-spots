@@ -18,7 +18,7 @@ app.use(
 );
 
 //Endpoint til cafes
-app.get('/Cafes', (req, res) => {
+app.get('/cafes', (req, res) => {
     mysqlConnection.query(
         "SELECT * FROM cafes;",
         (err, results, fields) => {
@@ -30,6 +30,15 @@ app.get('/Cafes', (req, res) => {
         }
     );
 })
+
+//Get cafes by id
+app.get('/cafes/:id', (req, res) => {
+    const cafesParameter = req.params.id;
+    const sql = 'SELECT * FROM `Cafes` WHERE `Cafe_id` = ?';
+    mysqlConnection.execute(sql,[cafesParameter], (err, results) => {
+        res.send(results);
+    })
+});
 
 //Endpoint til Favorites
 app.get('/Favorites', (req, res) => {
@@ -45,6 +54,15 @@ app.get('/Favorites', (req, res) => {
     );
 })
 
+//Get users by favorites
+app.get('/favorites/:id', (req, res) => {
+    const favoritesParameter = req.params.id;
+    const sql = 'SELECT * FROM `favorites` WHERE `fav_id` = ?';
+    mysqlConnection.execute(sql,[favoritesParameter], (err, results) => {
+        res.send(results);
+    })
+});
+
 //Endpoint til users
 app.get('/users', (req, res) => {
     mysqlConnection.query(
@@ -58,6 +76,15 @@ app.get('/users', (req, res) => {
         }
     );
 })
+
+//Get users by id
+app.get('/users/:id', (req, res) => {
+    const usersParameter = req.params.id;
+    const sql = 'SELECT * FROM `users` WHERE `user_id` = ?';
+    mysqlConnection.execute(sql,[usersParameter], (err, results) => {
+        res.send(results);
+    })
+});
 
 //Endpoint til product
 app.get('/product', (req, res) => {
@@ -73,23 +100,13 @@ app.get('/product', (req, res) => {
     );
 })
 
-app.get("/product/:id", (req, res) => {
-    const id = req.params.id;
-    let allProducts = [];
-    console.log(id)
-    mysqlConnection.query(
-        "SELECT * FROM product;",
-        (err, results, fields) => {
-            if (!err) {
-                return res.json(product);
-            } else {
-                console.log(err);
-            }
-        }
-    );
-    const product = allProducts.find(item => item.id == id);
-    console.log(allProducts)
-    return res.json(product);
+//Get product by id
+app.get('/product/:id', (req, res) => {
+    const productParameter = req.params.id;
+    const sql = 'SELECT * FROM `product` WHERE `Product_id` = ?';
+    mysqlConnection.execute(sql,[productParameter], (err, results) => {
+        res.send(results);
+    })
 });
 
 //Endpoint til cafe_product
@@ -106,6 +123,15 @@ app.get('/Cafe_product', (req, res) => {
     );
 })
 
+//vi mangler
+app.get('/Cafe_product/:id', (req, res) => {
+    const Cafe_productParameter = req.params.id;
+    const sql = 'SELECT * FROM `Cafe_product` WHERE `user_id, cafe_id` = ?';
+    mysqlConnection.execute(sql,[Cafe_productParameter], (err, results) => {
+        res.send(results);
+    })
+});
+
 //Endpoint til Discribtion
 app.get('/Discribtion', (req, res) => {
     mysqlConnection.query(
@@ -119,6 +145,15 @@ app.get('/Discribtion', (req, res) => {
         }
     );
 })
+
+//Get discribtion by id
+app.get('/discribtion/:id', (req, res) => {
+    const discribtionParameter = req.params.id;
+    const sql = 'SELECT * FROM `discribtion` WHERE `discribtion_id` = ?';
+    mysqlConnection.execute(sql,[discribtionParameter], (err, results) => {
+        res.send(results);
+    })
+});
 
 app.listen(port, () => { //Udskriver http://localhost:3000
     console.log(`Node.js REST API listening at http://localhost:${port}`);
