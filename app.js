@@ -54,7 +54,7 @@ app.get('/Favorites', (req, res) => {
     );
 })
 
-//Get users by favorites
+//Get favorites by id
 app.get('/favorites/:id', (req, res) => {
     const favoritesParameter = req.params.id;
     const sql = 'SELECT * FROM `favorites` WHERE `fav_id` = ?';
