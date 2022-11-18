@@ -62,7 +62,7 @@ app.get('/cafequery', (req, res,) => {
     const city = req.query.city;
 
     //cafequery?city=copenhagen sættes efter localhost:3000
-    const sql = 'SELECT * FROM `Cafes` WHERE `city` = ?';
+    const sql = 'SELECT * FROM `Cafes` WHERE `City` = ?';
     mysqlConnection.execute(sql, [city], (err, results) => {
         res.send(results);
     })
@@ -85,7 +85,7 @@ app.get('/Favorites', (req, res) => {
 //Get users by favorites
 app.get('/favorites/:id', (req, res) => {
     const favoritesParameter = req.params.id;
-    const sql = 'SELECT * FROM `favorites` WHERE `fav_id` = ?';
+    const sql = 'SELECT * FROM `Favorites` WHERE `fav_id` = ?';
     mysqlConnection.execute(sql, [favoritesParameter], (err, results) => {
         res.send(results);
     })
@@ -108,7 +108,7 @@ app.get('/users', (req, res) => {
 //Get users by id
 app.get('/users/:id', (req, res) => {
     const usersParameter = req.params.id;
-    const sql = 'SELECT * FROM `users` WHERE `user_id` = ?';
+    const sql = 'SELECT * FROM `Users` WHERE `User_id` = ?';
     mysqlConnection.execute(sql, [usersParameter], (err, results) => {
         res.send(results);
     })
@@ -155,7 +155,7 @@ app.get('/Cafe_product', (req, res) => {
 app.get('/Cafe_product/:productId/:cafeId', (req, res) => {
     const productId = req.params.productId;
     const cafeId = req.params.cafeId;
-    const sql = 'SELECT * FROM `Cafe_product` WHERE `product_id` = ? and `cafe_id` = ?';
+    const sql = 'SELECT * FROM `Cafe_product` WHERE `Product_id` = ? and `Cafe_id` = ?';
     mysqlConnection.execute(sql, [productId, cafeId], (err, results) => {
         res.send(results);
     })
@@ -178,7 +178,7 @@ app.get('/Discribtion', (req, res) => {
 //Get discribtion by id
 app.get('/discribtion/:id', (req, res) => {
     const discribtionParameter = req.params.id;
-    const sql = 'SELECT * FROM `discribtion` WHERE `discribtion_id` = ?';
+    const sql = 'SELECT * FROM `Discribtion` WHERE `Discribtion_id` = ?';
     mysqlConnection.execute(sql, [discribtionParameter], (err, results) => {
         res.send(results);
     })
