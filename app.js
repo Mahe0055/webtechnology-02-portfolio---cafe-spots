@@ -20,7 +20,7 @@ app.use(
 //Endpoint til cafes. Returnerer alle cafeer i databasen
 app.get('/cafes', (req, res) => {
     mysqlConnection.query(
-        "SELECT * FROM cafes;",
+        "SELECT * FROM Cafes;",
         (err, results, fields) => {
             if (!err) {
                 res.json(results);
@@ -85,7 +85,7 @@ app.get('/Favorites', (req, res) => {
 //Get users by favorites
 app.get('/favorites/:id', (req, res) => {
     const favoritesParameter = req.params.id;
-    const sql = 'SELECT * FROM `Favorites` WHERE `fav_id` = ?';
+    const sql = 'SELECT * FROM `Favorites` WHERE `Fav_id` = ?';
     mysqlConnection.execute(sql, [favoritesParameter], (err, results) => {
         res.send(results);
     })
@@ -94,7 +94,7 @@ app.get('/favorites/:id', (req, res) => {
 //Endpoint til users. Returnerer alle users i databasen
 app.get('/users', (req, res) => {
     mysqlConnection.query(
-        "SELECT * FROM users;",
+        "SELECT * FROM Users;",
         (err, results, fields) => {
             if (!err) {
                 res.json(results);
@@ -117,7 +117,7 @@ app.get('/users/:id', (req, res) => {
 //Endpoint til product. Returnerer alle product i databasen
 app.get('/product', (req, res) => {
     mysqlConnection.query(
-        "SELECT * FROM product;",
+        "SELECT * FROM Product;",
         (err, results, fields) => {
             if (!err) {
                 res.json(results);
@@ -131,7 +131,7 @@ app.get('/product', (req, res) => {
 //Get product by id
 app.get('/product/:id', (req, res) => {
     const productParameter = req.params.id;
-    const sql = 'SELECT * FROM `product` WHERE `Product_id` = ?';
+    const sql = 'SELECT * FROM `Product` WHERE `Product_id` = ?';
     mysqlConnection.execute(sql, [productParameter], (err, results) => {
         res.send(results);
     })
