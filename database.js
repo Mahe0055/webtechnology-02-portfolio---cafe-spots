@@ -13,7 +13,10 @@ const mysqlConnection = mysql.createConnection({
     user: process.env.USER,
     database: process.env.DATABASE,
     password: process.env.PASSWORD,
-    multipleStatements: true
+    multipleStatements: true,
+    ssl: {
+        "rejectUnauthorized": this.host === "localhost"
+    }
 });
 
 mysqlConnection.connect((err) => {
