@@ -27,7 +27,7 @@ CREATE TABLE Cafes (
 CREATE TABLE Discribtion (    
     Discribtion_id INTEGER,
     Sound_level VARCHAR(10),
-    Cafee_size VARCHAR(10),
+    Cafe_size VARCHAR(10),
     Price_range VARCHAR(10),
     Cafe_id INTEGER,
     Lightning_level VARCHAR(10),
@@ -104,15 +104,15 @@ Insert into Product (Product_id,Product_name, User_id) values (4,'Toast', 4);
 Insert into Product (Product_id,Product_name, User_id) values (5,'Blueberry Muffin', 1);
 Insert into Product (Product_id,Product_name, User_id) values (6,'Apple pie', 3);
 
-Insert into cafe_product (Product_id,cafe_id) values (1,1);
-Insert into cafe_product (Product_id,cafe_id) values (2,2);
-Insert into cafe_product (Product_id,cafe_id) values (3,3);
-Insert into cafe_product (Product_id,cafe_id) values (4,4);
-Insert into cafe_product (Product_id,cafe_id) values (5,5);
-Insert into cafe_product (Product_id,cafe_id) values (6,6);
-Insert into cafe_product (Product_id,cafe_id) values (1,7);
-Insert into cafe_product (Product_id,cafe_id) values (2,8);
-Insert into cafe_product (Product_id,cafe_id) values (3,9);
-Insert into cafe_product (Product_id,cafe_id) values (4,10);
-Insert into cafe_product (Product_id,cafe_id) values (5,11);
-Insert into cafe_product (Product_id,cafe_id) values (6,12);
+Insert into Cafe_product (Product_id,cafe_id) values (1,1);
+Insert into Cafe_product (Product_id,cafe_id) values (2,2);
+Insert into Cafe_product (Product_id,cafe_id) values (3,3);
+Insert into Cafe_product (Product_id,cafe_id) values (4,4);
+Insert into Cafe_product (Product_id,cafe_id) values (5,5);
+Insert into Cafe_product (Product_id,cafe_id) values (6,6);
+Insert into Cafe_product (Product_id,cafe_id) values (1,7);
+Insert into Cafe_product (Product_id,cafe_id) values (2,8);
+Insert into Cafe_product (Product_id,cafe_id) values (3,9);
+Insert into Cafe_product (Product_id,cafe_id) values (4,10);
+Insert into Cafe_product (Product_id,cafe_id) values (5,11);
+Insert into Cafe_product (Product_id,cafe_id) values (6,12);
