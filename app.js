@@ -184,6 +184,20 @@ app.get('/discribtion/:id', (req, res) => {
     })
 });
 
+//cafes og discribtion
+app.get('/cafes/discribtion', (req, res) => {
+    mysqlConnection.query(
+        "SELECT * FROM `Discribtion` inner join `Cafes` on `Discribtion.Cafe_id` = `Cafes.Cafe_id` ;",
+        (err, results, fields) => {
+            if (!err) {
+                res.json(results);
+            } else {
+                console.log(err);
+            }
+        }
+    );
+})
+cafes
 app.listen(port, () => { //Udskriver http://localhost:3000
     console.log(`Node.js REST API listening at http://localhost:${port}`);
 });
