@@ -17,8 +17,5 @@ function renderWishes(cafeer) {
         `;
         ul.appendChild(li);
     }
-
-    // lave et loop
-    // create element
-
+    
 }
