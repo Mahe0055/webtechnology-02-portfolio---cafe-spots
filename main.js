@@ -21,6 +21,7 @@ function renderCafeer(cafeer) {
 
 }
 
+/*
 //Render samtale cafeer - big
 fetch('http://localhost:3000/cafeNames')
     .then(response => response.json())
@@ -47,7 +48,9 @@ function renderBigCafes(bigCafes) {
     }
 
 }
+ */
 
+/*
 //Render mellem cafeer - medium
 fetch('http://localhost:3000/cafeNames')
     .then(response => response.json())
@@ -73,7 +76,9 @@ function renderMediumCafes(mediumCafes) {
     }
 
 }
+ */
 
+/*
 //Render stille cafeer - small
 fetch('http://localhost:3000/cafeNames')
     .then(response => response.json())
@@ -100,6 +105,7 @@ function renderDiscribtion(smallCafes) {
     }
 
 }
+ */
 
 //søgefelt hvor man kan søge efter adresser
 function inputElement(inputText) {
