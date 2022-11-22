@@ -1,0 +1,7 @@
+/* Remove the HTML list bullet */
+ul {
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 20px;
+}
+

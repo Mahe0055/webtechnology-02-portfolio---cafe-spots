@@ -2,33 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="main.css" rel="stylesheet">
     <title>Studievenlige caféer</title>
 </head>
+
 <body>
-<h1>Caféer</h1>
+<div class="cafeTitle">
+    <h1>Caféer</h1>
+</div>
 
-<h2>Intro</h2>
+<div class="intro">
+    <h2>Intro</h2>
+</div>
 
-<h2>Alle cafeer</h2>
-<ul id="cafeer"></ul>
+<div class="searchField">
+    <h2> Søg efter Københavnse byer</h2>
+    <input id="input" oninput="inputElement(value)" placeholder="Søg efter cafeer" type="text">
+    <ul id="cafeAddress"></ul>
 
-<h2>Samtale cafeer</h2>
-<ul id="Discribtion"></ul>
-<!-- <img src="indsæt billede her til samtale cafeer.jpg" alt="Girl in a jacket" width="200" height="300"> -->
+</div>
 
-<!-- indsæt 4 billeder -->
 
-<h2>Stille cafeer</h2>
+<div class="allCafes">
+    <h2>Alle cafeer</h2>
+    <ul id="cafeer"></ul>
+</div>
 
-<h2>Om os</h2>
-<!-- <img src="billede af klara.jpg" alt="Girl in a jacket" width="200" height="300"> -->
-<!-- <img src="billede af amalie.jpg" alt="Girl in a jacket" width="200" height="300"> -->
-<!-- <img src="indsæt billede her til samtale cafeer.jpg" alt="Girl in a jacket" width="200" height="300"> -->
+<div class="conversationCafes">
+    <h2>Samtale cafeer</h2>
+    <ul id="bigCafes"></ul>
+    <!-- <img src="indsæt billede her til samtale cafeer.jpg" alt="Girl in a jacket" width="200" height="300"> -->
+    <!-- indsæt 4 billeder -->
+</div>
 
-<script src="main.js" ></script>
+<div class="betweenCafes">
+    <h2>Mellem cafeer</h2>
+    <ul id="mediumCafes"></ul>
+</div>
+
+<div class="quietCafes">
+    <h2>Stille cafeer</h2>
+    <ul id="smallCafes"></ul>
+</div>
+
+<div class="aboutUs">
+    <h2>Om os</h2>
+    <!-- <img src="billede af klara.jpg" alt="Girl in a jacket" width="200" height="300"> -->
+    <!-- <img src="billede af amalie.jpg" alt="Girl in a jacket" width="200" height="300"> -->
+    <!-- <img src="billede af maheen.jpg" alt="Girl in a jacket" width="200" height="300"> -->
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
