@@ -19,7 +19,7 @@
 </div>
 
 <div class="searchField">
-    <h3> Søg efter café</h3>
+    <h3> Søg efter Café</h3>
     <input id="input" oninput="inputElement(value)" placeholder="Søg efter cafeer" type="text">
     <ul id="cafeAddress"></ul>
 </div>
@@ -31,8 +31,8 @@
     <input type="text" id="city" placeholder="Fx København">
 
 <div>
-        <label for="cafe-size">Cafe størrelse:</label>
-        <select id="cafe-size" name"cafe-size">
+        <label for="cafe-size">Cafe størrelse</label>
+        <select id="cafe-size" >name"cafe-size">
         <option value="small">lille</option>
         <option value="medium">mellem</option>
         <option value="big">stor</option>
@@ -40,8 +40,8 @@
 </div>
 
 <div>
-        <label for="price_level">Prisklasse:</label>
-        <select id="price_level" name"price_level">
+        <label for="price_level">Prisklasse</label>
+        <select id="price_level">name"price_level">
         <option value="cheap">billig</option>
         <option value="medium">mellem</option>
         <option value="expensive">dyr</option>
@@ -49,8 +49,8 @@
 </div>
 
 <div>
-        <label for="lightning_level">Lys niveau:</label>
-        <select id="lightning_level" name"lightning_level">
+        <label for="lightning_level">Lys niveau</label>
+        <select id="lightning_level" >name"lightning_level">
         <option value="low">lav</option>
         <option value="medium">okay</option>
         <option value="high">høj</option>
@@ -58,8 +58,8 @@
 </div>
 
     <div>
-        <label for="sound_level">Lyd niveau:</label>
-        <select id="sound_level" name"sound_level">
+        <label for="sound_level">Lyd niveau</label>
+        <select id="sound_level" >name"sound_level">
         <option value="low">lav</option>
         <option value="between">okay</option>
         <option value="high">høj</option>
@@ -68,10 +68,10 @@
 
 
     <p>Wifi:</p>
-    <label for="wifi">ja</label>
-    <input type="radio" id="wifi" name="wifi" value="ja">
-    <label for="wifi">nej</label>
-    <input type="radio" id="wifi" name="wifi" value="nej">
+    <label for="wifiJa">ja</label>
+    <input type="radio" id="wifiJa" name="wifi" value="ja">
+    <label for="wifiNej">nej</label>
+    <input type="radio" id="wifiNej" name="wifi" value="nej">
 
     <p>Studiekort:</p>
     <label for="studiekort">ja</label>
@@ -95,15 +95,11 @@
     <!-- indsæt 4 billeder -->
 
 
-<div class="betweenCafes">
-    <h6>Mellem cafeer</h6>
-    <ul id="mediumCafes"></ul>
+<div class="favoriteCafes">
+    <h6>Vores favoritter</h6>
+    <ul id="favoritcafes"></ul>
 </div>
-
-<div class="quietCafes">
-    <h6>Stille cafeer</h6>
-    <ul id="smallCafes"></ul>
-</div>
+    
 
 <div class="aboutUs">
     <h6>Om os</h6>
@@ -116,5 +112,6 @@
 
 
 <script src="main.js"></script>
+
 </body>
 </html>
