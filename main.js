@@ -109,17 +109,17 @@ function renderDiscribtion(smallCafes) {
 
 //søgefelt hvor man kan søge efter adresser
 function inputElement(inputText) {
-    const listUnderInput = document.querySelector("#cafeAddress");
+    const listUnderInput = document.querySelector("#cafeNames");
     listUnderInput.innerHTML = "";
     if(inputText.trim()) { // Findes inputText
         fetch('http://localhost:3000/cafes')
             .then(response => response.json())
             .then(cafeer => {
                 for (let i = 0; i < cafeer.length; i++) {
-                    if (cafeer[i].Address.toLowerCase().match(inputText.toLowerCase())) {
-                        let listOfAddress = document.createElement("li");
-                        listOfAddress.innerHTML = cafeer[i].Address + ", " + cafeer[i].Cafees_name;
-                        listUnderInput.appendChild(listOfAddress);
+                    if (cafeer[i].Cafees_name.toLowerCase().match(inputText.toLowerCase())) {
+                        let listOfCafeNames = document.createElement("li");
+                        listOfCafeNames.innerHTML = cafeer[i].Cafees_name + ", " + cafeer[i].Address;
+                        listUnderInput.appendChild(listOfCafeNames);
                     }
                 }
             })
