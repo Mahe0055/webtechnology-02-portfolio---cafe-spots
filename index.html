@@ -7,6 +7,8 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="main.css" rel="stylesheet">
     <title>Studievenlige caféer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -17,70 +19,82 @@
 <div class="intro">
     <h2>Intro</h2>
 </div>
-
-<div class="searchField">
-    <h3> Hurtig søgning efter café</h3>
-    <input id="input" oninput="inputElement(value)" placeholder="Søg efter cafeer" type="text">
-    <ul id="cafeNames"></ul>
+<div class="row">
+    <div class="col-4">
+        <div class="searchField" class="form-group">
+            <h3> Hurtig søgning efter café</h3>
+            <input class="form-control" id="input" oninput="inputElement(value)" placeholder="Søg efter cafeer"
+                   type="text">
+            <ul id="cafeNames"></ul>
+        </div>
+    </div>
 </div>
 
-
-<div class="filterCafes">
-<h4> Filtér cafeer</h4>
-    <label for="city">Postnummer:</label>
-    <input type="number" id="city" placeholder="Fx 2200">
-
-<div>
-        <label for="cafe-size">Cafe størrelse</label>
-        <select id="cafe-size" >name"cafe-size">
-        <option value="small">lille</option>
-        <option value="medium">mellem</option>
-        <option value="big">stor</option>
+<div class="row">
+    <div class="col-2">
+        <label for="cafeSize">Cafe størrelse</label>
+        <select class="form-select" id="cafeSize" name="cafe-size">
+            <option value="small">lille</option>
+            <option value="medium">mellem</option>
+            <option value="big">stor</option>
         </select>
-</div>
 
-<div>
-        <label for="price_level">Prisklasse</label>
-        <select id="price_level">name"price_level">
-        <option value="cheap">billig</option>
-        <option value="medium">mellem</option>
-        <option value="expensive">dyr</option>
-        </select>
-</div>
+    </div>
 
-<div>
-        <label for="lightning_level">Lys niveau</label>
-        <select id="lightning_level" >name"lightning_level">
-        <option value="low">lav</option>
-        <option value="medium">okay</option>
-        <option value="high">høj</option>
-        </select>
-</div>
-
-    <div>
-        <label for="sound_level">Lyd niveau</label>
-        <select id="sound_level" >name"sound_level">
-        <option value="low">lav</option>
-        <option value="between">okay</option>
-        <option value="high">høj</option>
+    <div class="col-2">
+        <label for="priceRange">Prisklasse</label>
+        <select class="form-select" id="priceRange" name="priceRange">
+            <option value="cheap">billig</option>
+            <option value="between">mellem</option>
+            <option value="expensive">dyr</option>
         </select>
     </div>
 
+    <div class="col-2">
+        <label for="lightning_level">Lys niveau</label>
+        <select class="form-select" id="lightning_level">name"lightning_level">
+            <option value="low">lav</option>
+            <option value="medium">okay</option>
+            <option value="high">høj</option>
+        </select>
+    </div>
 
-    <p>Wifi:</p>
-    <label for="wifiJa">ja</label>
-    <input type="radio" id="wifiJa" name="wifi" value="ja">
-    <label for="wifiNej">nej</label>
-    <input type="radio" id="wifiNej" name="wifi" value="nej">
-
-    <p>Studiekort:</p>
-    <label for="studiekort">ja</label>
-    <input type="radio" id="study-card" name="studiekort" value="ja">
-    <label for="study-card">nej</label>
-    <input type="radio" id="studiekort" name="studiekort" value="nej">
+    <div class="col-2">
+        <label for="sound_level">Lyd niveau</label>
+        <select class="form-select" id="sound_level">name"sound_level">
+            <option value="low">lav</option>
+            <option value="between">okay</option>
+            <option value="high">høj</option>
+        </select>
+    </div>
 </div>
 
-<button>Resultat</button>
+<div class="container">
+    <form>
+        <div class="radio">
+            <p>Wifi:</p>
+            <label for="wifiYes">ja</label>
+            <input checked id="wifiYes" name="wifi" type="radio" value="1">
+
+            <label for="wifiNo">nej</label>
+            <input checked id="wifiNo" name="wifi" type="radio" value="0">
+        </div>
+
+        <div class="radio">
+            <p>Studiekort:</p>
+            <label for="studyDiscountYes">ja</label>
+                <input checked id="studyDiscountYes" name="studiekort" type="radio" value="1">
+                <label for="studyDiscountNo">nej</label>
+                <input checked id="studyDiscountNo" name="studiekort" type="radio" value="0">
+        </div>
+    </form>
+</div>
+
+<button class="btn btn-outline-info" id=bottom type="button">Resultat</button>
+
+<div>
+    <ul id="searchResultList"></ul>
+</div>
 
 <div class="favoriteCafes">
     <h6>Vores favoritter</h6>
@@ -96,6 +110,5 @@
 </div>
 
 <script src="main.js"></script>
-
 </body>
 </html>
