@@ -23,7 +23,6 @@ h1 {
     font-family: EB Garamond;
     text-align: center;
     line-height: 1;
-    color:black;
 }
 
 
@@ -31,7 +30,6 @@ h1 {
     font-family: EB Garamond;
     text-align: center;
     line-height: 1;
-    color:black;
 }
 
 h2, h3, h4, h5, h6 {
@@ -46,12 +44,6 @@ body{
     margin: 0;
 }
 
-.filter{
-    font-family: EB Garamond;
-    text-align: center;
-    line-height: 1;
-    color:black;
-}
 
 .btn-btn-outline-info{
     width: 180px;
@@ -63,6 +55,4 @@ body{
     padding: 14px 16px;
     font-size: 16px;
 }
-
-
 
