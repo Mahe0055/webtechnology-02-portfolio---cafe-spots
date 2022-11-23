@@ -1,25 +1,38 @@
 /* Remove the HTML list bullet */
 ul {
     list-style-type: none;
-    font-weight: normal;
     font-size: 20px;
+    font-weight: bold;
 }
 
 * {
     font-family: EB Garamond;
-    text-align: left;
+    text-align: center;
     line-height: 1;
-    color:floralwhite;
-    font-weight: bold;
-
 }
 
 h1 {
     font-size: 50px;
     padding: 30px;
     text-align: center;
+    font-weight: bold;
 }
 
+
+.searchField {
+    font-family: EB Garamond;
+    text-align: center;
+    line-height: 1;
+    color:black;
+}
+
+
+.intro {
+    font-family: EB Garamond;
+    text-align: center;
+    line-height: 1;
+    color:black;
+}
 
 h2, h3, h4, h5, h6 {
     font-size: 22px;
@@ -27,41 +40,17 @@ h2, h3, h4, h5, h6 {
 
 body{
     background-image: url(cbdbd6799e8c107dee9d0a469017ca9c.jpg);
-
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
     margin: 0;
 }
 
-.intro{
-    width:1500px;
-    height: 300px;
-    min-height:100px;
-    margin: 100px auto;
-    background-color: #3D2713;
-    border-radius: 16px;
-
-}
-
-.searchField{
-    width:1500px;
-    height: 300px;
-    min-height:100px;
-    margin: 100px auto;
-    background-color: #3D2713;
-    border-radius: 16px;
-}
-
-
 .filter{
-    width:1500px;
-    height: 300px;
-    min-height:100px;
-    margin: 100px auto;
-    background-color: #3D2713;
-    border-radius: 16px;
-
+    font-family: EB Garamond;
+    text-align: center;
+    line-height: 1;
+    color:black;
 }
 
 .btn-btn-outline-info{
@@ -73,38 +62,6 @@ body{
     color: floralwhite;
     padding: 14px 16px;
     font-size: 16px;
-}
-
-.website-description {
-    width:1500px;
-    height: 300px;
-    min-height:100px;
-    margin: 100px auto;
-    background-color: #3D2713;
-    border-radius: 16px;
-
-}
-
-
-
-.favoriteCafes {
-    width:1500px;
-    height: 300px;
-    min-height:100px;
-    margin: 100px auto;
-    background-color: #3D2713;
-    border-radius: 16px;
-
-}
-
-.aboutUs {
-    width:1500px;
-    height: 300px;
-    min-height:100px;
-    margin: 100px auto;
-    background-color: #3D2713;
-    border-radius: 16px;
-
 }
 
 
