@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="searchField">
     <div class="col-4">
         <div class="searchField" class="form-group">
             <h3> Hurtig søgning efter café</h3>
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="filter">
     <div class="col-2">
         <label for="cafeSize">Cafe størrelse</label>
         <select class="form-select" id="cafeSize" name="cafe-size">
@@ -74,11 +74,9 @@
             <option value="high">høj</option>
         </select>
     </div>
-</div>
 
-<div class="container">
     <form>
-        <div class="radio">
+        <div class="wifi">
             <p>Wifi:</p>
             <label for="wifiYes">ja</label>
             <input checked id="wifiYes" name="wifi" type="radio" value="1">
@@ -87,7 +85,7 @@
             <input checked id="wifiNo" name="wifi" type="radio" value="0">
         </div>
 
-        <div class="radio">
+        <div class="studieKort">
             <p>Studiekort:</p>
             <label for="studyDiscountYes">ja</label>
                 <input checked id="studyDiscountYes" name="studiekort" type="radio" value="1">
@@ -95,9 +93,10 @@
                 <input checked id="studyDiscountNo" name="studiekort" type="radio" value="0">
         </div>
     </form>
-</div>
+
 
 <button class="btn btn-outline-info" id=button type="button">Resultat</button>
+</div>
 
 <div>
     <ul id="searchResultList"></ul>

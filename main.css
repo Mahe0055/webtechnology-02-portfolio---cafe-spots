@@ -76,14 +76,36 @@ body{
 }
 
 .website-description {
-    width: 750px;
+    width:1500px;
+    height: 300px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #3D2713;
+    border-radius: 16px;
+
 }
 
-.favorites-description {
-    width: 800px;
+
+
+.favoriteCafes {
+    width:1500px;
+    height: 300px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #3D2713;
+    border-radius: 16px;
+
 }
 
 .aboutUs {
-    width: 1000px;
+    width:1500px;
+    height: 300px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #3D2713;
+    border-radius: 16px;
+
 }
+
+
 
