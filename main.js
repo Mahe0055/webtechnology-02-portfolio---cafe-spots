@@ -110,7 +110,7 @@ function renderDiscribtion(smallCafes) {
 
 
 
-
+//
 
 
 
@@ -135,7 +135,7 @@ function inputElement(inputText) {
 
 
 // data bliver forbundet med input felterne på html
-const button = document.querySelector("#bottom");
+const button = document.querySelector("#button");
 button.addEventListener('click', function (event) {
     event.preventDefault();
 

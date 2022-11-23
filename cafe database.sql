@@ -10,14 +10,14 @@ DROP TABLE if exists Product;
 DROP TABLE if exists cafe_product;
 
 CREATE TABLE Users (    
-    User_id INTEGER,
+    User_id INTEGER auto_increment,
     User_name VARCHAR(100),
     Study_card BOOLEAN,
     PRIMARY KEY (User_id)
 );
 
 CREATE TABLE Cafes (	
-	Cafe_id INTEGER, 
+	Cafe_id INTEGER auto_increment, 
 	City VARCHAR(100), 
 	Address VARCHAR(100), 
     Cafees_name varchar(40) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE Cafes (
 );
 
 CREATE TABLE Discribtion (    
-    Discribtion_id INTEGER,
+    Discribtion_id INTEGER auto_increment,
     Sound_level VARCHAR(10),
     Cafe_size VARCHAR(10),
     Price_range VARCHAR(10),
@@ -38,7 +38,7 @@ CREATE TABLE Discribtion (
 );
 
 CREATE TABLE Favorites (    
-    Fav_id INTEGER,
+    Fav_id INTEGER auto_increment,
     Cafe_id INTEGER,
     User_id INTEGER,
     PRIMARY KEY (Fav_id),
@@ -47,7 +47,7 @@ CREATE TABLE Favorites (
 );
 
 CREATE TABLE Product (    
-    Product_id INTEGER,
+    Product_id INTEGER auto_increment,
     Product_name VARCHAR(100),
     User_id INTEGER,
     PRIMARY KEY (Product_id),

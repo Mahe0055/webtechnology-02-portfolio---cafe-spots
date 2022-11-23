@@ -43,14 +43,13 @@ app.get('/cafes/:id', (req, res) => {
 //Oprettelse af en ny cafe
 app.post('/cafes/create', (req, res,) => {
     //Input værdierne i body'en
-    const inputCafeId = req.body.Cafe_id;
     const inputCafeName = req.body.Cafees_name;
     const inputCafeCity = req.body.City;
     const inputCafeAdress = req.body.Address;
 
     //Oprettelse af cafe og man sender post "send" via Postman
-    const sql = "Insert into Cafes (Cafe_id,Cafees_name,City,Address) values (?,?,?,?);"
-    mysqlConnection.execute(sql, [inputCafeId, inputCafeName, inputCafeCity, inputCafeAdress], (err, results) => {
+    const sql = "Insert into Cafes (Cafees_name,City,Address) values (?,?,?);"
+    mysqlConnection.execute(sql, [inputCafeName, inputCafeCity, inputCafeAdress], (err, results) => {
         res.send(results);
     })
 
