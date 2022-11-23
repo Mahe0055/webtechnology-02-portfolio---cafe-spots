@@ -148,8 +148,8 @@ button.addEventListener('click', function (event) {
 });
 
 function renderCafeSize(cafeer) {
-    console.log(cafeer)
     const searchResults = document.querySelector("#searchResultList");
+    searchResults.innerHTML = ""; //
 
     let cafeSizeDropDown = document.getElementById("cafeSize");
     let chosenSize = cafeSizeDropDown.options[cafeSizeDropDown.selectedIndex].value;
