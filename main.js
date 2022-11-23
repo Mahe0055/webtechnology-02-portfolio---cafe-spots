@@ -114,7 +114,7 @@ function renderDiscribtion(smallCafes) {
 
 
 
-//søgefelt hvor man kan søge efter adresser
+//søgefelt hvor man kan søge efter cafeer
 function inputElement(inputText) {
     const listUnderInput = document.querySelector("#cafeNames");
     listUnderInput.innerHTML = "";
