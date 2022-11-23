@@ -19,3 +19,15 @@ h1 {
     padding: 30px;
     text-align: center;
 }
+
+.website-description {
+    width: 750px;
+}
+
+.favorites-description {
+    width: 800px;
+}
+
+.aboutUs {
+    width: 1000px;
+}
