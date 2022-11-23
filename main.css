@@ -45,7 +45,7 @@ body{
 }
 
 
-.btn-btn-outline-info{
+#button{
     width: 180px;
     margin: auto;
     border-radius: 5px;
@@ -54,5 +54,25 @@ body{
     color: floralwhite;
     padding: 14px 16px;
     font-size: 16px;
+}
+
+.filter{
+    width:600px;
+    height: 400px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #4B290C;
+    opacity: 90%;
+}
+.col_2 {
+    border-radius: 8px;
+    color: floralwhite;
+    text-align: center;
+}
+
+.wifiStudiekort {
+    border-radius: 8px;
+    color: floralwhite;
+    text-align: center;
 }
 
