@@ -5,19 +5,74 @@ ul {
     font-size: 20px;
 }
 
-h2, h3, h4, h5, h6 {
-    font-size: 22px;
-}
+* {
+    font-family: EB Garamond;
+    text-align: left;
+    line-height: 1;
+    color:floralwhite;
+    font-weight: bold;
 
-body {
-    background-color: green;
 }
-
 
 h1 {
     font-size: 50px;
     padding: 30px;
     text-align: center;
+}
+
+
+h2, h3, h4, h5, h6 {
+    font-size: 22px;
+}
+
+body{
+    background-image: url(cbdbd6799e8c107dee9d0a469017ca9c.jpg);
+
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+.intro{
+    width:1500px;
+    height: 300px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #3D2713;
+    border-radius: 16px;
+
+}
+
+.searchField{
+    width:1500px;
+    height: 300px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #3D2713;
+    border-radius: 16px;
+}
+
+
+.filter{
+    width:1500px;
+    height: 300px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #3D2713;
+    border-radius: 16px;
+
+}
+
+.btn-btn-outline-info{
+    width: 180px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(29,29,29);
+    color: floralwhite;
+    padding: 14px 16px;
+    font-size: 16px;
 }
 
 .website-description {
