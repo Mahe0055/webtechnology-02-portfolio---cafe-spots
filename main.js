@@ -111,6 +111,9 @@ function renderDiscribtion(smallCafes) {
 
 
 
+
+
+
 //søgefelt hvor man kan søge efter adresser
 function inputElement(inputText) {
     const listUnderInput = document.querySelector("#cafeNames");
@@ -193,11 +196,3 @@ function renderCafeSize(cafeer) {
     }
 
 }
-
-
-
-
-
-
-
-
