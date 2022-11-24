@@ -5,7 +5,8 @@ ul {
     font-weight: bold;
 }
 
-#button{
+/* result-button styling */
+#button {
     width: 180px;
     margin: auto;
     border-radius: 5px;
@@ -16,7 +17,7 @@ ul {
     font-size: 16px;
 }
 
-body{
+body {
     background-image: url(cbdbd6799e8c107dee9d0a469017ca9c.jpg);
     font-size: 15px;
     line-height: 1.5;
@@ -24,6 +25,7 @@ body{
     margin: 0;
 }
 
+/* headline layout */
 h1 {
     font-size: 50px;
     padding: 30px;
@@ -31,17 +33,20 @@ h1 {
     font-weight: bold;
 }
 
+/* paragrahps layout */
 .website-description, .favorites-description, .text-aboutus {
     font-size: 20px;
     width: 1000px;
 }
 
+/* pictures */
 .column {
     float: right;
     width: 50%;
     padding: 1px;
 }
 
+/* all text on webpage moved more to left */
 .flex-container {
     position: relative;
     left: 50px;
