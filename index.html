@@ -1,32 +1,59 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
+    <title>Københavnske studie cafeer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <title>Studievenlige caféer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="main.css" rel="stylesheet">
+
+
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body>
-<div class="cafeTitle">
-    <h1>Studievenlige caféer i København</h1>
-</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Københavnske studie cafeer</a>
+        </div>
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#section1">Intro</a></li>
+                    <li><a href="#section2">Hurtig søgning efter café</a></li>
+                    <li><a href="#section3">Filteret søgning</a></li>
+                    <li><a href="#section4">Vores favoritter</a></li>
+                    <li><a href="#section5">Om os</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
-<div class="intro">
-    <h2>Intro</h2>
+<div id="section1" class="container-fluid">
+    <h1>Intro</h1>
     <div class="website-description">
-    <p>Er du en studerende og leder efter en café, hvor du både kan nyde en kop kaffe/kage og studere?</p>
-    <p>Der er uendelige mange caféer i KBH, men det kan være svært at finde den rigtige café, hvor man kan lave studierelevant arbejde eller bare have en uformel samtale med studiekammerater i et hyggeligt miljø.</p>
-    <p>Her kan du finde caféer i København, som opfylder dine behov for den bedst mulige cafebesøg.</p>
+        <p>Er du en studerende og leder efter en café, hvor du både kan nyde en kop kaffe/kage og studere?</p>
+        <p>Der er uendelige mange caféer i KBH, men det kan være svært at finde den rigtige café, hvor man kan lave studierelevant arbejde eller bare have en uformel samtale med studiekammerater i et hyggeligt miljø.</p>
+        <p>Her kan du finde caféer i København, som opfylder dine behov for den bedst mulige cafebesøg.</p>
     </div>
 </div>
 
-<div class="searchField">
+<div id="section2" class="container-fluid">
+    <h1>Hurtig søgning efter café</h1>
     <div class="col-4">
         <div class="searchField" class="form-group">
             <h3> Hurtig søgning efter café</h3>
@@ -37,96 +64,96 @@
     </div>
 </div>
 
-<div class="filter">
-    <div class="col-2">
-        <label for="cafeSize">Cafe størrelse</label>
-        <select class="form-select" id="cafeSize" name="cafe-size">
-            <option value="small">lille</option>
-            <option value="medium">mellem</option>
-            <option value="big">stor</option>
-        </select>
-    </div>
+<div id="section3" class="container-fluid1">
+    <h1>Filteret søgning</h1>
+    <div class="filter">
+        <div class="col-2">
+            <label for="cafeSize">Cafe størrelse</label>
+            <select class="form-select" id="cafeSize" name="cafe-size">
+                <option value="small">lille</option>
+                <option value="medium">mellem</option>
+                <option value="big">stor</option>
+            </select>
 
-    <div class="col-2">
-        <label for="priceRange">Prisklasse</label>
-        <select class="form-select" id="priceRange" name="priceRange">
-            <option value="cheap">billig</option>
-            <option value="between">mellem</option>
-            <option value="expensive">dyr</option>
-        </select>
-    </div>
-
-    <div class="col-2">
-        <label for="lightning_level">Lys niveau</label>
-        <select class="form-select" id="lightning_level">name"lightning_level">
-            <option value="low">lav</option>
-            <option value="medium">okay</option>
-            <option value="high">høj</option>
-        </select>
-    </div>
-
-    <div class="col-2">
-        <label for="sound_level">Lyd niveau</label>
-        <select class="form-select" id="sound_level">name"sound_level">
-            <option value="low">lav</option>
-            <option value="between">okay</option>
-            <option value="high">høj</option>
-        </select>
-    </div>
-
-    <form>
-        <div class="wifiStudiekort">
-        <div class="wifi">
-            <p>Wifi:</p>
-            <label for="wifiYes">ja</label>
-            <input checked id="wifiYes" name="wifi" type="radio" value="1">
-
-            <label for="wifiNo">nej</label>
-            <input checked id="wifiNo" name="wifi" type="radio" value="0">
         </div>
 
-        <div class="studiekort">
-            <p>Studiekort:</p>
-            <label for="studyDiscountYes">ja</label>
-                <input checked id="studyDiscountYes" name="studiekort" type="radio" value="1">
-                <label for="studyDiscountNo">nej</label>
-                <input checked id="studyDiscountNo" name="studiekort" type="radio" value="0">
+        <div class="col-2">
+            <label for="priceRange">Prisklasse</label>
+            <select class="form-select" id="priceRange" name="priceRange">
+                <option value="cheap">billig</option>
+                <option value="between">mellem</option>
+                <option value="expensive">dyr</option>
+            </select>
         </div>
+
+        <div class="col-2">
+            <label for="lightning_level">Lys niveau</label>
+            <select class="form-select" id="lightning_level">name"lightning_level">
+                <option value="low">lav</option>
+                <option value="medium">okay</option>
+                <option value="high">høj</option>
+            </select>
         </div>
-    </form>
 
-<button class="btn-btn-outline-info" id=button type="button">Resultat</button>
+        <div class="col-2">
+            <label for="sound_level">Lyd niveau</label>
+            <select class="form-select" id="sound_level">name"sound_level">
+                <option value="low">lav</option>
+                <option value="between">okay</option>
+                <option value="high">høj</option>
+            </select>
+        </div>
 
+        <form>
+            <div class="wifiStudiekort">
+                <div class="wifi">
+                    <p>Wifi:</p>
+                    <label for="wifiYes">ja</label>
+                    <input checked id="wifiYes" name="wifi" type="radio" value="1">
 
+                    <label for="wifiNo">nej</label>
+                    <input checked id="wifiNo" name="wifi" type="radio" value="0">
+                </div>
+
+                <div class="studiekort">
+                    <p>Studiekort:</p>
+                    <label for="studyDiscountYes">ja</label>
+                    <input checked id="studyDiscountYes" name="studiekort" type="radio" value="1">
+                    <label for="studyDiscountNo">nej</label>
+                    <input checked id="studyDiscountNo" name="studiekort" type="radio" value="0">
+                </div>
+            </div>
+        </form>
+
+        <button class="btn-btn-outline-info" id=button type="button">Resultat</button>
+
+    </div>
+
+    <div>
+        <ul id="searchResultList"></ul>
+    </div>
 
 </div>
 
-<div>
-    <ul id="searchResultList"></ul>
-</div>
-
-<div class="favoriteCafes">
-    <h4>Vores favoritter</h4>
-    <div class="favorite-description">
-        Vi er din digitale cafe favorit guide. Vi hjælper vores brugere med at finde rundt i de mange cafeer i København. Her på redaktionen elsker vi cafeer. Kaffe duften der suser igennem rummmet med grin i baggrunden. Faktisk sidder vi lige nu imens vi skriver dette skriv på en cafe. Så dedikeret er vi nemlig. Fangede det dig? Så læs videre for at se vores favorit cafeer er:
+<div id="section4" class="container-fluid">
+    <h1>Vores favoritter</h1>
+    <div class="favorites-description">
+        <p>Vi er din digitale cafe favorit guide. Vi hjælper vores brugere med at finde rundt i de mange cafeer i København. Vores favorit cafeer er:</p>
     </div>
+
     <ul id="favoritcafes"></ul>
 </div>
 
-
-<div class="aboutUs">
-    <h5>Om os</h5>
-    <div class="description-aboutus">
+<div id="section5" class="container-fluid">
+    <h1>Om os</h1>
+    <div class="aboutUs">
         <p>Siden 2020 har vi arbejdet for at give brugere (ja, dig der læser med nu) af vores site bedre overblik over studievenlige cafeer i København, som passer lige akkurat til DINE behov. Særligt de sidste års tid har vi haft øget fokus på at få flere samarbejdspartnere, som har øget vores sortiment af cafeer.
             Medejere af dette site er Klara, Maheen og Amalie. Vi kom op med denne idé, da der var lockdown i 2020. Vi tænkte, at når verden "åbner" op igen, så vil vi gerne støtte cafeernes eksistens ved at give deres fremtidlige kunder mulighed for at finde cafeer, så de kan komme "ud" i verden igen.
         </p>
     </div>
 
-    <!-- <img src="billede af klara.jpg" alt="Girl in a jacket" width="200" height="300"> -->
-    <!-- <img src="billede af amalie.jpg" alt="Girl in a jacket" width="200" height="300"> -->
-    <!-- <img src="billede af maheen.jpg" alt="Girl in a jacket" width="200" height="300"> -->
 </div>
 
-<script src="main.js"></script>
 </body>
+
 </html>
