@@ -34,3 +34,8 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
+
+.website-description, .favorites-description, .text-aboutus {
+    font-size: 20px;
+    width: 1000px;
+}
