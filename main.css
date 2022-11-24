@@ -16,10 +16,6 @@ ul {
     font-size: 16px;
 }
 
-
-
-
-
 body{
     background-image: url(cbdbd6799e8c107dee9d0a469017ca9c.jpg);
     font-size: 15px;
@@ -38,4 +34,10 @@ h1 {
 .website-description, .favorites-description, .text-aboutus {
     font-size: 20px;
     width: 1000px;
+}
+
+.column {
+    float: right;
+    width: 50%;
+    padding: 1px;
 }
