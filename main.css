@@ -5,46 +5,6 @@ ul {
     font-weight: bold;
 }
 
-* {
-    font-family: EB Garamond;
-    text-align: center;
-    line-height: 1;
-}
-
-h1 {
-    font-size: 50px;
-    padding: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-
-.searchField {
-    font-family: EB Garamond;
-    text-align: center;
-    line-height: 1;
-}
-
-
-.intro {
-    font-family: EB Garamond;
-    text-align: center;
-    line-height: 1;
-}
-
-h2, h3, h4, h5, h6 {
-    font-size: 22px;
-}
-
-body{
-    background-image: url(cbdbd6799e8c107dee9d0a469017ca9c.jpg);
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
-}
-
-
 #button{
     width: 180px;
     margin: auto;
@@ -56,23 +16,17 @@ body{
     font-size: 16px;
 }
 
-.filter{
-    width:600px;
-    height: 400px;
-    min-height:100px;
-    margin: 100px auto;
-    background-color: #4B290C;
-    opacity: 90%;
-}
-.col_2 {
-    border-radius: 8px;
-    color: floralwhite;
-    text-align: center;
+body{
+    background-image: url(cbdbd6799e8c107dee9d0a469017ca9c.jpg);
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
 
-.wifiStudiekort {
-    border-radius: 8px;
-    color: floralwhite;
+h1 {
+    font-size: 50px;
+    padding: 30px;
     text-align: center;
+    font-weight: bold;
 }
-
