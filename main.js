@@ -158,6 +158,7 @@ function renderCafeSize(cafeer) {
     let chosenPrice = cafePriceDropDown.options[cafePriceDropDown.selectedIndex].value;
 
 
+
     let cafeLightDropDown = document.getElementById("lightning_level");
     let chosenLight = cafeLightDropDown.options[cafeLightDropDown.selectedIndex].value;
 
