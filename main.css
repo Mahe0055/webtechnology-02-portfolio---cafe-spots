@@ -1,5 +1,5 @@
 /* Remove the HTML list bullet */
-ul {
+/*ul {
     list-style-type: none;
     font-size: 20px;
     font-weight: bold;
@@ -59,6 +59,7 @@ body{
 .filter{
     width:600px;
     height: 400px;
+
     min-height:100px;
     margin: 100px auto;
     background-color: #4B290C;
@@ -76,11 +77,91 @@ body{
     text-align: center;
 }
 
-h2, h3, h4, h5 {
-    font-weight: bold;
-    font-size: 30px;
+ */
+
+* {
+    box-sizing: border-box;
+
 }
 
-.website-description, .favorite-description, .description-aboutus {
-    font-size: 25px;
+body {
+    position: relative;
+}
+
+
+#section1 {
+    background-color: #2F1B0A;
+    padding-top:50px;
+    height:400px;
+}
+
+
+#section2 {
+    background-image: url("fed08ebc9ac7c957d1288512c5de35f0.jpg");
+    background-color: floralwhite;
+    padding-top:50px;
+    height:400px;
+}
+
+
+#section3 {
+    background-image: url("eye.jpg");
+    background-color: floralwhite;
+    padding-top:50px;
+    height:850px;
+}
+
+.filter {
+
+    width:600px;
+    height: 400px;
+    min-height:100px;
+    margin: 100px auto;
+    background-color: #2F1B0A;
+    opacity: 95%;
+    text-after-overflow: center;
+    border: 2px rgb(29,29,29);
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+
+#button {
+    width: 180px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(29,29,29);
+    color: floralwhite;
+    padding: 14px 16px;
+    font-size: 16px;
+}
+
+
+#section4 {
+    background-color: #1E1208;
+    padding-top:50px;
+    height:500px;
+}
+
+
+#section5 {
+    background-image: url("wug.jpg");
+    background-color: floralwhite;
+    padding-top:50px;
+    height:400px;
+}
+
+.aboutUs {
+    text-align: -webkit-left;
+    border-radius: 10px;
+    height: 250px;
+    margin: 30px auto;
+    background-color: #2F1B0A;
+    opacity: 95%;
+    color: floralwhite;
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+
 }
