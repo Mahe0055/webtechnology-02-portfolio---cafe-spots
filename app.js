@@ -5,7 +5,7 @@ require('dotenv');
 const mysqlConnection = require("./database");
 const port = 3000;
 
-const URL_FOR_FRONTEND = "YOUR_GITHUB_PAGE_ORIGIN_HERE";
+const URL_FOR_FRONTEND = "https://mahe0055.github.io";
 
 app.use(express.json()); //Used to parse JSON bodies
 app.use(express.urlencoded({extended: true})); //Parse URL-encoded bodies
